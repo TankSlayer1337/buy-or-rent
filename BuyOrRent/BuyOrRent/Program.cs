@@ -10,8 +10,8 @@ const double houseStartValue = 2000000d;
 const double houseAnnualValueGrowth = 1.03d;
 const double houseLoanInterestMultiplier = 1.03d;
 const double houseMonthlyFee = 4000d;
-const double interestDeductionPercent = 0.25d;
-const double houseLoanDeductedInterestMultiplier = (houseLoanInterestMultiplier - 1) * (1 - interestDeductionPercent) + 1;
+const double interestDeductionPercent = 25d;
+const double houseLoanDeductedInterestMultiplier = (houseLoanInterestMultiplier - 1) * (1 - interestDeductionPercent / 100) + 1;
 const double monthlyAmortization = 5000d;
 
 var monthlyLoanInterestMultiplier = Math.Pow(houseLoanDeductedInterestMultiplier, 1d / 12d);
