@@ -5,14 +5,14 @@
 // https://youtu.be/q9Golcxjpi8
 
 // Buy parameters
-var downPaymentHouse = 300000d;
-var houseStartValue = 2000000d;
-var houseAnnualValueGrowth = 1.03d;
-var houseLoanInterestMultiplier = 1.03d;
-var houseMonthlyFee = 4000d;
-var interestDeductionPercent = 0.25d;
-var houseLoanDeductedInterestMultiplier = (houseLoanInterestMultiplier - 1) * (1 - interestDeductionPercent) + 1;
-var monthlyAmortization = 5000d;
+const double downPaymentHouse = 300000d;
+const double houseStartValue = 2000000d;
+const double houseAnnualValueGrowth = 1.03d;
+const double houseLoanInterestMultiplier = 1.03d;
+const double houseMonthlyFee = 4000d;
+const double interestDeductionPercent = 0.25d;
+const double houseLoanDeductedInterestMultiplier = (houseLoanInterestMultiplier - 1) * (1 - interestDeductionPercent) + 1;
+const double monthlyAmortization = 5000d;
 
 var monthlyLoanInterestMultiplier = Math.Pow(houseLoanDeductedInterestMultiplier, 1d / 12d);
 var monthlyHouseValueGrowth = Math.Pow(houseAnnualValueGrowth, 1d / 12d);
@@ -20,14 +20,14 @@ var houseValue = houseStartValue;
 var houseLoan = houseStartValue - downPaymentHouse;
 
 // Rent parameters
-var stocksInterestMultiplier = 1.0657d;
-var rent = 8000;
+const double stocksInterestMultiplier = 1.0657d;
+const double rent = 8000;
 
 var monthlyStocksInterestMultiplier = Math.Pow(stocksInterestMultiplier, 1d / 12d);
 
 // General parameters
-var yearsToSimulate = 30;
-var monthsToSimulate = yearsToSimulate * 12;
+const double yearsToSimulate = 30;
+const double monthsToSimulate = yearsToSimulate * 12;
 
 
 var capitalBuy = downPaymentHouse;
