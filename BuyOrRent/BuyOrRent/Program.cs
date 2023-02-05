@@ -4,6 +4,12 @@
 // https://youtu.be/Uwl3-jBNEd4
 // https://youtu.be/q9Golcxjpi8
 
+// assumptions
+// - rent is cheaper than mortgage + fee (script will still work otherwise but arguably not yield as useful results).
+// - house owner amortizes until the loan is paid in full.
+// - comparison stops when house loan is paid. Given interest from investing is larger than house value growth,
+//   investing will yield larger capital in the long run.
+
 // Buy parameters
 const double houseStartValue = 3000000d;
 const double downPaymentHouse = houseStartValue * 0.15;
